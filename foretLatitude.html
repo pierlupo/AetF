@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le monde entre arbres &amp; feuilles</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/af.css">
+    <script src="js/jquery-3.4.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="images/layout/modele-concept-conception-logo-arbre_681147-374.avif" alt="logo N&B" id="logoImg">
+        <h1>le monde entre arbres &amp; feuilles</h1>
+        <nav id="mainNav">
+            <h1 class="accessibility">Menu principal</h1>
+            <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À  propos</a></li>
+                <li><a href="blog.html">blog</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle"><img src="images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
+
+    </header><!-- Fin du mainHeader -->
+    <section id="pageContent" class="oneCol galleries">
+    <main class="SingleGallery">
+        <h1>Les forêts selon la latitude : taïga et forêt tempérée</h1>
+
+        <!-- Images used to open the lightbox -->
+ <div class="row">
+    <div class="column">
+      <img src="images/foretLatitude/02-1101.webp" onclick="openModal();currentSlide(1)" class="hover-shadow img0">
+    </div>
+    <div class="column">
+      <img src="images/foretLatitude/Taiga_Alaska.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow img0">
+    </div>
+    <div class="column">
+      <img src="images/foretLatitude/lapland-5933654_960_720(1).jpg" onclick="openModal();currentSlide(3)" class="hover-shadow img0">
+    </div>
+    <div class="column">
+      <img src="images/foretLatitude/7773_04 Russie taiga C C A-Share Alike 2.0.avif" onclick="openModal();currentSlide(4)" class="hover-shadow img0">
+    </div>
+    <div class="column">
+        <img src="images/foretLatitude/7773_05 Forest_temperee resineux San_Juan_Island USA lic. CCP2.5.avif" onclick="openModal();currentSlide(5)" class="hover-shadow img0">
+      </div>
+    <div class="column">
+        <img src="images/foretLatitude/7773_07 Foret Cameroun C C A-Share Alike 3.0.avif" onclick="openModal();currentSlide(6)" class="hover-shadow img0">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/foretLatitude/02-1101.webp" class="imgStyle">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/foretLatitude/Taiga_Alaska.jpg" class="imgStyle">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/foretLatitude/lapland-5933654_960_720(1).jpg" class="imgStyle">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/foretLatitude/7773_04 Russie taiga C C A-Share Alike 2.0.avif" class="imgStyle">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/foretLatitude/7773_05 Forest_temperee resineux San_Juan_Island USA lic. CCP2.5.avif" class="imgStyle">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/foretLatitude/7773_07 Foret Cameroun C C A-Share Alike 3.0.avif" class="imgStyle">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/02-1101.webp" onclick="currentSlide(1)" alt="Taïga ou forêts boréales">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/Taiga_Alaska.jpg" onclick="currentSlide(2)" alt="Taïga Alaska">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/lapland-5933654_960_720(1).jpg" onclick="currentSlide(3)" alt="Taïga Laponie">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/7773_04 Russie taiga C C A-Share Alike 2.0.avif" onclick="currentSlide(4)" alt="Taïga Russe">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/7773_05 Forest_temperee resineux San_Juan_Island USA lic. CCP2.5.avif" onclick="currentSlide(5)" alt="Forêt tempérée (San Juan Island)">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/foretLatitude/7773_07 Foret Cameroun C C A-Share Alike 3.0.avif" onclick="currentSlide(6)" alt="Forêt tropicale (Cameroun)">
+      </div>
+    </div>
+  </div> 
+
+</div> 
+        <!-- <ul>
+            <li><img src="images/foretLatitude/02-1101.webp" alt="forêt selon la latitude"></li>
+            <li><img src="images/foretLatitude/7773_02 Alaska taiga wiki public domain.avif" alt="forêt selon la latitude"></li>
+            <li><img src="images/foretLatitude/7773_03 Laponie taiga wiki GNU FDL 1.2.avif" alt="forêt selon la latitude"></li>
+            <li><img src="images/foretLatitude/7773_04 Russie taiga C C A-Share Alike 2.0.avif" alt="forêt selon la latitude"></li>
+            <li><img src="images/foretLatitude/7773_05 Forest_temperee resineux San_Juan_Island USA lic. CCP2.5.avif" alt="forêt selon la latitude"></li>
+            <li><img src="images/foretLatitude/7773_07 Foret Cameroun C C A-Share Alike 3.0.avif" alt="forêt selon la latitude"></li></ul> -->
+    </main>
+</section><!-- Fin du pageContent -->
+    </div>
+    <footer id="mainFooter">
+        <p>&copy; Pierre Kraimps -- 2023</p>
+    </footer><!-- Fin du mainFooter -->
+</body>
+</html>

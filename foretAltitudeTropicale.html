@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le monde entre arbres &amp; feuilles</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/af.css">
+    <script src="js/jquery-3.4.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="mainHeader">
+        <img src="images/layout/modele-concept-conception-logo-arbre_681147-374.avif" alt="logo N&B" id="logoImg">
+        <h1>le monde entre arbres &amp; feuilles</h1>
+        <nav id="mainNav">
+            <h1 class="accessibility">Menu principal</h1>
+            <p class="accessibility"><a href="#pageContent"
+                    title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="blog.html">blog</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle"><img src="images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
+
+    </header><!-- Fin du mainHeader -->
+    <section id="pageContent" class="oneCol galleries">
+        <main class="SingleGallery">
+            <h1>Les forêts d'altitude dans les régions tropicales</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="images/foretAltitudeTropicale/04-1101.webp" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow img0">
+                </div>
+                <div class="column">
+                    <img src="images/foretAltitudeTropicale/colombia-4931476_960_720.jpg"
+                        onclick="openModal();currentSlide(2)" class="hover-shadow img0">
+                </div>
+                <div class="column">
+                    <img src="images/foretAltitudeTropicale/7704_13 Puna Peru Altiplano wiki domaine public.avif"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow img0">
+                </div>
+                <div class="column">
+                    <img src="images/foretAltitudeTropicale/jad20211116-eco-gabon-foret-01-944x472-1637339537.jpg"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow img0">
+                </div>
+                <div class="column">
+                    <img src="images/foretAltitudeTropicale/Paramo Colombie.avif" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow img0">
+                </div>
+                <!-- <div class="column">
+            <img src="images/foretLatitude/7773_07 Foret Cameroun C C A-Share Alike 3.0.avif" onclick="openModal();currentSlide(6)" class="hover-shadow img0" >
+        </div> -->
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="images/foretAltitudeTropicale/04-1101.webp" class="imgStyle">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="images/foretAltitudeTropicale/colombia-4931476_960_720.jpg" class="imgStyle">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="images/foretAltitudeTropicale/7704_13 Puna Peru Altiplano wiki domaine public.avif"
+                            class="imgStyle">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="images/foretAltitudeTropicale/jad20211116-eco-gabon-foret-01-944x472-1637339537.jpg" class="imgStyle">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="images/foretAltitudeTropicale/Paramo Colombie.avif" class="imgStyle">
+                    </div>
+
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/foretAltitudeTropicale/04-1101.webp" onclick="currentSlide(1)"
+                            alt="Forêt du Cameroun">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/foretAltitudeTropicale/colombia-4931476_960_720.jpg"
+                            onclick="currentSlide(2)" alt="La cordillère des Andes (Colombie)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo"
+                            src="images/foretAltitudeTropicale/7704_13 Puna Peru Altiplano wiki domaine public.avif"
+                            onclick="currentSlide(3)" alt="Puna Peru Altiplano">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/foretAltitudeTropicale/jad20211116-eco-gabon-foret-01-944x472-1637339537.jpg"
+                            onclick="currentSlide(4)" alt="Forêt équatoriale au Gabon">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/foretAltitudeTropicale/Paramo Colombie.avif"
+                            onclick="currentSlide(5)" alt="Paramo en Colombie">
+                    </div>
+                </div>
+            </div>
+            <!-- <ul>
+            <li><img src="images/foretAltitudeTropicale/04-1101.webp" alt="forêt altitude tropicale"></li>
+            <li><img src="images/foretAltitudeTropicale/7021_cordielleredesandes.avif" alt="forêt altitude tropicale"></li>
+            <li><img src="images/foretAltitudeTropicale/7704_13 Puna Peru Altiplano wiki domaine public.avif" alt="forêt altitude tropicale"></li>
+            <li><img src="images/foretAltitudeTropicale/foret equatoriale kenya.avif" alt="forêt altitude tropicale"></li>
+            <li><img src="images/foretAltitudeTropicale/Paramo Colombie.avif" alt="forêt altitude tropicale"></li></ul> -->
+        </main>
+    </section><!-- Fin du pageContent -->
+    </div>
+    <footer id="mainFooter">
+        <p>&copy; Pierre Kraimps -- 2023</p>
+    </footer><!-- Fin du mainFooter -->
+</body>
+
+</html>

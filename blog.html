@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le monde entre arbres &amp; feuilles</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/af.css">
+    <script src="js/jquery-3.4.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="images/layout/modele-concept-conception-logo-arbre_681147-374.avif" alt="logo A&F" id="logoImg">
+        <h1>le monde entre arbres &amp; feuilles</h1>
+        <nav id="mainNav">
+            <h1 class="accessibility">Menu principal</h1>
+            <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À  propos</a></li>
+                <li><a href="blog.html">blog</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle"><img src="images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
+    </header><!-- Fin du mainHeader -->
+    <section id="pageContent" class="twoCols blogList blog">
+        <main id="leftCol">
+            <article>
+                <header>
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p><strong>JJ - MM - AAAA</strong> | Pierre Kraimps | 3 commentaires</p>
+                </header>
+                <p><img src="images/pexels-dmitri-sotnikov-6477259.jpg" alt="image d'illustration de l'article">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui reiciendis modi illo,
+                    mollitia cumque harum atque tempore veritatis nostrum blanditiis minus velit nam pariatur,
+                    eligendi quas accusamus ad. Fuga, <a href="singleBlog.html#ch1">autem consequatur</a>, distinctio odio,
+                    nesciunt dolor nisi blanditiis minus dicta officia necessitatibus. Ea atque explicabo ipsam incidunt vitae modi quo.
+                </p>
+                <p><a href="singleBlog.html">Lire la suite...</a></p>
+            </article><!-- Fin du premier article -->
+            <article>
+                <header>
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p><strong>JJ - MM - AAAA</strong> | Pierre Kraimps | 3 commentaires</p>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui reiciendis modi illo,
+                    mollitia cumque harum atque tempore veritatis nostrum blanditiis minus velit nam pariatur,
+                    eligendi quas accusamus ad. Fuga, autem consequatur, distinctio odio,
+                    nesciunt dolor nisi blanditiis minus dicta officia necessitatibus. Ea atque explicabo ipsam incidunt vitae modi quo.
+                </p>
+                <p><a href="singleBlog.html">Lire la suite...</a></p>
+            </article><!-- Fin du deuxième article -->
+            <article>
+                <header>
+                    <h1>Lorem ipsum dolor sit.</h1>
+                    <p><strong>JJ - MM - AAAA</strong> | Pierre Kraimps | 3 commentaires</p>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui reiciendis modi illo,
+                    mollitia cumque harum atque tempore veritatis nostrum blanditiis minus velit nam pariatur,
+                    eligendi quas accusamus ad. Fuga, autem consequatur, distinctio odio,
+                    nesciunt dolor nisi blanditiis minus dicta officia necessitatibus. Ea atque explicabo ipsam incidunt vitae modi quo.
+                </p>
+                <p><a href="singleBlog.html">Lire la suite...</a></p>
+             </article><!-- Fin du troisième article -->
+        </main><!-- Fin du leftCol -->
+        <aside id="rightCol">
+            <section id="blogSearch">
+                <h1><label for="search">Rechercher</label></h1>
+                <input type="search" name="search" id="search">
+            </section>
+            <section id="blogCategorie">
+                <h1>Catégories</h1>
+                <ul>
+                    <li><a href="galerie.html">Les forêts selon la latitude<span>11</span></a></li>
+                    <li><a href="galerie.html">Les forêts d'altitude dans les régions tempérées<span>2</span></a></li>
+                    <li><a href="galerie.html">Les forêts d'altitude dans les régions tropicales<span>4</span></a></li>
+                    <li><a href="galerie.html">Les forêts particulières<span>8</span></a></li>
+                    <li><a href="galerie.html">Voyages<span>15</span></a></li>
+                </ul>
+            </section>
+            <section id="blogArchives">
+                <h1>Archives</h1>
+                <div>
+                    <h2><a href="#">2021 <span>18</span></a></h2>
+                    <ul>
+                        <li><a href="#">Janvier 2021 <span>3</span></a></li>
+                        <li><a href="#">Février 2021 <span>1</span></a></li>
+                        <li><a href="#">Mars 2021 <span>2</span></a></li>
+                        <li><a href="#">Avril 2021 <span>2</span></a></li>
+                        <li><a href="#">Mai 2021 <span>4</span></a></li>
+                        <li><a href="#">Juin 2021 <span>3</span></a></li>
+                        <li><a href="#">Septembre 2021 <span>3</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                <h2><a href="#">2022 <span>17</span></a></h2>
+                <ul>
+                    <li><a href="#">Janvier 2022 <span>3</span></a></li>
+                    <li><a href="#">Février 2022 <span>1</span></a></li>
+                    <li><a href="#">Mars 2022 <span>2</span></a></li>
+                    <li><a href="#">Mai 2022 <span>4</span></a></li>
+                    <li><a href="#">Juin 2022 <span>3</span></a></li>
+                    <li><a href="#">Septembre 2022 <span>4</span></a></li>
+                </ul>
+            </div>
+            </section>
+
+        </aside><!-- Fin du rightCol -->
+    </section><!-- Fin du pageContent -->
+    </div>
+    <footer id="mainFooter">
+        <p>&copy; Pierre Kraimps -- 2023</p>
+    </footer><!-- Fin du mainFooter -->
+</body>
+</html>

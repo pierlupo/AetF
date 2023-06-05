@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>le monde entre arbres &amp; feuilles</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/af.css">
+  <script src="js/jquery-3.4.1.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header id="mainHeader">
+    <img src="images/layout/modele-concept-conception-logo-arbre_681147-374.avif" alt="logo N&B" id="logoImg">
+    <h1>le monde entre arbres &amp; feuilles</h1>
+    <nav id="mainNav">
+      <h1 class="accessibility">Menu principal</h1>
+      <p class="accessibility"><a href="#pageContent"
+          title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="blog.html">blog</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle"><img src="images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
+
+  </header><!-- Fin du mainHeader -->
+  <section id="pageContent" class="oneCol galleries">
+    <main>
+      <!-- <div id="overlay"></div> -->
+      <h1>Les forêts particulières</h1>
+      <!-- <ul>
+                <li>
+                    <a href="#">
+                        <h2>La forêt fruticée</h2>
+                        <img src="images/foretParticuliere/fruticee/05-1101.webp" alt="forêt fruticee" id="myImg">
+                    </a>
+                </li> -->
+      <!-- <button id="myBtn">clic</button> -->
+      <!-- <p>
+                        <button type="button" onclick="agrandir()">+ Agrandir</button>
+                        <button type="button" onclick="diminuer()">- Diminuer</button>
+                        </p> -->
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="images/foretParticuliere/fruticee/05-1101.webp" onclick="openModal();currentSlide(1)"
+            class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/laurisylve/06-1101.webp" onclick="openModal();currentSlide(2)"
+            class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/ripisylve/07-1101.webp" onclick="openModal();currentSlide(3)"
+            class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/bush.webp" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/foret-dunaire.webp" onclick="openModal();currentSlide(5)"
+            class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/foret-pin-corse.webp" onclick="openModal();currentSlide(6)"
+            class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/foretParticuliere/la sapiniere.webp" onclick="openModal();currentSlide(7)"
+            class="hover-shadow">
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/foretParticuliere/fruticee/05-1101.webp" class="imgStyle">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/foretParticuliere/laurisylve/06-1101.webp" class="imgStyle">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/foretParticuliere/ripisylve/07-1101.webp" class="imgStyle">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/foretParticuliere/foret-dunaire.webp" class="imgStyle">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/foretParticuliere/bush.webp" class="imgStyle">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/foretParticuliere/foret-pin-corse.webp" class="imgStyle">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/foretParticuliere/la sapiniere.webp" class="imgStyle">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/fruticee/05-1101.webp" onclick="currentSlide(1)"
+              alt="Forêt fruticee">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/laurisylve/06-1101.webp" onclick="currentSlide(2)"
+              alt="Forêt laurisylve">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/ripisylve/07-1101.webp" onclick="currentSlide(3)"
+              alt="Forêt ripisylve">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/foret-dunaire.webp" onclick="currentSlide(4)"
+              alt="Forêt dunaire">
+          </div>
+
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/bush.webp" onclick="currentSlide(5)" alt="Bush">
+          </div>
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/foret-pin-corse.webp" onclick="currentSlide(6)"
+              alt="Forêt pins laricio (Corse)">
+          </div>
+          <div class="column">
+            <img class="demo" src="images/foretParticuliere/la sapiniere.webp" onclick="currentSlide(7)"
+              alt="Forêt sapinière">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <li>
+                    <a href="#">
+                        <h2>La forêt laurisylve</h2>
+                        <img src="images/foretParticuliere/laurisylve/06-1101.webp" alt="forêt laurisylve">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>La forêt ripisylve</h2>
+                        <img src="images/foretParticuliere/ripisylve/07-1101.webp" alt="forêt particuliere">
+                        
+                    </a>
+                </li>
+                <li><a href="#">
+                        <h2>Le bush australien</h2>
+                        <img src="images/foretParticuliere/bush.webp" alt="forêt particuliere">    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <h2>La forêt dunaire d'Atlantique</h2>
+                        <img src="images/foretParticuliere/foret-dunaire.webp" alt="forêt particuliere">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <h2>La forêt de pins laricio</h2>
+                    <img src="images/foretParticuliere/foret-pin-corse.webp" alt="forêt particuliere">
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>La sapinière</h2>
+                        <img src="images/foretParticuliere/la sapiniere.webp" alt="forêt particuliere">
+                    </a>
+                </li> -->
+    </main>
+  </section><!-- Fin du pageContent -->
+  <footer id="mainFooter">
+    <p>&copy; Pierre Kraimps -- 2023</p>
+  </footer><!-- Fin du mainFooter -->
+</body>
+
+</html>
